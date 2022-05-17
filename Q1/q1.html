@@ -16,17 +16,17 @@
                 consectetur adipisicing.</p>
                 <div class="form">
                     <label for="username">Username</label><br>
-                    <input type="text" id="username" class="form1"   name="user" placeholder="your-email@gmail.com"/> <br> 
+                    <input type="text" id="username" class="form1"   name="user" placeholder="your-email@gmail.com" required/> <br> 
                     <label for="password">Password</label> <br>
-                    <input type="text" id="password" class="form1"   name="pass" placeholder="Your Password"/>
+                    <input type="password"  style="-webkit-text-security: star"  pattern="[0-9]*"  inputmode="numeric"   id="password"  class="form1"   name="pass" placeholder="Your Password"  required/>
                     <div class="down">
-                        <input type="checkbox" class="remember" name="remember">
+                        <input type="checkbox" class="remember" name="remember" />
                         <label for="remember" id="Remember">Remember me</label>
                         <a class="forget" href="https://www.google.com/gmail/" target="_blank">Forget Password</a>
                     </div>
                     <div class="button">
                         <div>
-                            <input type="button" class="login" value="Log in">
+                            <input type="submit" class="login" value="Log in">
                         </div>
                     </div>
                 </div>
