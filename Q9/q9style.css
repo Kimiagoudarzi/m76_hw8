@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(163, 163, 163);
+
+}
+.wrapper{
+    width:85vw ;
+    height:95vh ;
+    padding-top: 10px;
+    margin-left:  120px;
+}
+.part1{
+    display: flex;
+    flex-wrap: wrap;
+}
+.part1 >div{
+    margin-right: 20px;
+}
+.img1{
+    width: 260px;
+    height: 190px; 
+}
+.img3{
+    width: 250px;
+    height: 380px;
+}
+.img5{
+    width: 280px;
+    height: 180px;
+}
+.img7{
+    width: 230px;
+    height: 370px;
+}
+.img2{
+    width: 260px;
+    height: 380px;
+  
+}
