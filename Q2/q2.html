@@ -16,7 +16,7 @@
                 consectetur adipisicing.</p>
                 <div class="form">
                     <label for="username">Username</label><br>
-                    <input type="text" id="username" class="form1" name="user" placeholder="your-email@gmail.com" onblur="getValueInput()" required/> <br> 
+                    <input type="text" id="username" class="form1" name="user" placeholder="your-email@gmail.com" required/> <br> 
                     <label for="password">Password</label> <br>
                     <input type="password" pattern="[0-9]*"  inputmode="numeric"   id="password"  class="form1"   name="pass" placeholder="Your Password"  required/>
                     <div class="down">
@@ -37,11 +37,13 @@
         </div>  
     </div>
     <script> 
-        const getValueInput = () =>{
-          let inputValue = document.getElementById("username").value; 
-          document.getElementById("valueInput").innerHTML = inputValue; 
-          console.log(inputValue);
-        }
-      </script>
+    function getValueInput() {
+        let UserName = document.getElementById("username").value;
+        let Password = document.getElementById("password").value;
+        let object = { UserName, Password };
+        let info = Object.assign(object)
+        localStorage.setItem("userInfo", JSON.stringify(info));
+}   
+    </script>
 </body>
 </html>
