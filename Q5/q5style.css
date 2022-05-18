@@ -7,7 +7,6 @@ body{
     width: 99vw;
     height: 99vh;
     background-color: #F0F1F3;
-    overflow: hidden;
 }
 .header{
     width: 50vw;
@@ -20,14 +19,10 @@ body{
     font-size: 25px;
 }
 .part1{
-    width: 95vw;
-    height: 20vh;
-    margin: 20px 0px 0px 58px;
-    display: inline-flex;
-    flex-wrap: wrap;
-}
-.part1 >div{
-    margin: 0px 26px 0px 0px;
+    margin: 20px 0px 0px 20px ;
+    display: grid;
+    grid-template-columns: repeat(8, 10fr);
+    grid-gap: 1.5rem;
 }
 .icons{
     width: 130px;
@@ -40,20 +35,24 @@ body{
     color: #183153;
     padding: 6px 0px 0px 43px;
 }
-@media screen and (max-width: 480px){
-.part1{
-    margin-left: 0px;
-    justify-content: center;
-    align-items: center;
-}
-.icons{
-    width: 85px;
-    height: 85px;
-}
-.icons i{
-    padding: 0px 0px 0px 23px;   
-}
-.icons p{
-    padding-left: 0px;
-}
+@media only screen and (min-width : 480px){
+    .wrapper{
+        width: 100%;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .header{
+        width: 100%;
+    }
+    .part1{
+        display: grid;
+        grid-template-columns: repeat(4,5fr);
+        grid-gap: 1rem;
+    }
+    .icons{
+        width: 80px;
+        height: 80px;
+    }
+    
 }
