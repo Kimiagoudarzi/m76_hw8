@@ -14,7 +14,7 @@
                 <h1>Login to Colorlib</h1>
                 <p style="color: rgb(141, 141, 141);font-size: 17px;">Lorem ipsum dolor sit amet elit. Sapiente aut eos<br>
                 consectetur adipisicing.</p>
-                <div class="form">
+                <form action="submit.html" onsubmit="allStorage()" class="form">
                     <label for="username">Username</label><br>
                     <input type="text" id="username" class="form1" name="user" placeholder="your-email@gmail.com" required/> <br> 
                     <label for="password">Password</label> <br>
@@ -26,28 +26,26 @@
                     </div>
                     <div class="button">
                         <div>
-                            <button type="button" class="login" onclick="getValueInput()" ondblclick="location.href ='./1.html' ; ">Log in</button>
+                            <button type="button" class="login" onclick="getValueInput()">Log in</button>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
         <div class="right">
             <img src="./image/1.jpg" class="image"/>
         </div>  
     </div>
-    <script> 
-    // function getValueInput() {
-        //  let inputValue1 = document.querySelector("username").value;
-        //  let inputValue2 = document.querySelector("password").value;
-        // document.querySelector("valueInput").innerHTML = `UserName: ${inputValue1} Password: ${inputValue2}`;
-        function getValueInput() {
-        let UserName = document.getElementById("username").value;
-        let Password = document.getElementById("password").value;
-        let object = { UserName, Password };
-        let info = Object.assign(object)
-        localStorage.setItem("userInfo", JSON.stringify(info));
-}   
-    </script>
+       <script src="./2.js"></script>
+       <script>
+        function allStorage() {
+            var username = document.getElementById('username').value;
+            localStorage.setItem('username', username);
+
+            var password = document.getElementById('password').value;
+            localStorage.setItem('password', password);
+    
+        }
+    </script>  
 </body>
 </html>
