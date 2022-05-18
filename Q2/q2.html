@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./q2style.css"/>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="left">
+            <div class="container-left">
+                <h1>Login to Colorlib</h1>
+                <p style="color: rgb(141, 141, 141);font-size: 17px;">Lorem ipsum dolor sit amet elit. Sapiente aut eos<br>
+                consectetur adipisicing.</p>
+                <div class="form">
+                    <label for="username">Username</label><br>
+                    <input type="text" id="username" class="form1" name="user" placeholder="your-email@gmail.com" required/> <br> 
+                    <label for="password">Password</label> <br>
+                    <input type="password" pattern="[0-9]*"  inputmode="numeric"   id="password"  class="form1"   name="pass" placeholder="Your Password"  required/>
+                    <div class="down">
+                        <input type="checkbox" class="remember" name="remember" checked />
+                        <label for="remember" id="Remember">Remember me</label>
+                        <a class="forget" href="https://www.google.com/gmail/" target="_blank">Forget Password</a>
+                    </div>
+                    <div class="button">
+                        <div>
+                            <button type="button" class="login" onclick="getValueInput()">Log in</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <img src="./image/1.jpg" class="image"/>
+        </div>  
+    </div>
+    <script> 
+        const getValueInput = () =>{
+          let inputValue = { username: "kimia" , password: 123456};
+         
+}
+      </script>
+</body>
+</html>
