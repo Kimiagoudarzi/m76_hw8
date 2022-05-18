@@ -7,7 +7,6 @@ body{
     width: 99vw;
     height: 99vh;
     background-color: #F0F1F3;
-    overflow: hidden;
 }
 .header{
     width: 50vw;
@@ -20,15 +19,12 @@ body{
     font-size: 25px;
 }
 .part1{
-    width: 95vw;
-    height: 20vh;
-    margin: 20px 0px 0px 58px;
-    display: inline-flex;
-    flex-wrap: wrap;
+    margin: 20px 0px 0px 20px ;
+    display: grid;
+    grid-template-columns: repeat(8, 10fr);
+    grid-gap: 1.5rem;
 }
-.part1 >div{
-    margin: 0px 26px 0px 0px;
-}
+
 .icons{
     width: 130px;
     height: 130px;
