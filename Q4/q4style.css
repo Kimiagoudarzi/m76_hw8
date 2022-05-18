@@ -1,0 +1,38 @@
+body{
+    margin: 0px;
+    font-family: sans-serif;
+    background-color: #F0F1F3
+}
+.wrapper{
+    width: 99vw;
+    height: 99vh;
+    background-color: #F0F1F3;
+}
+.header{
+    width: 50vw;
+    height: 5vh;
+    margin: 20px 0px 0px 58px;
+}
+.header p{
+    color: #183153;
+    font-weight: bold;
+    font-size: 25px;
+}
+.part1{
+    margin: 20px 0px 0px 20px ;
+    display: grid;
+    grid-template-columns: repeat(8, 10fr);
+    grid-gap: 1.5rem;
+}
+
+.icons{
+    width: 130px;
+    height: 130px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 7px;
+}
+.icons i{
+    margin-top: 20px;
+    color: #183153;
+    padding: 6px 0px 0px 43px;
+}
