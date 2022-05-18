@@ -38,11 +38,13 @@
     </div>
     <script> 
     function getValueInput() {
-        let UserName = document.getElementById("username").value;
-        let Password = document.getElementById("password").value;
-        let object = { UserName, Password };
-        let info = Object.assign(object)
-        localStorage.setItem("userInfo", JSON.stringify(info));
+         let inputValue1 = document.querySelector("username").value;
+         let inputValue2 = document.querySelector("password").value;
+        document.querySelector("valueInput").innerHTML = `UserName: ${inputValue1} Password: ${inputValue2}`;
+            setTimeout(function () {
+        window.location.href = './1.html';
+        alert( `welcome ${inputValue1} and your password is ${inputValue2}`)
+    }, 5000);
 }   
     </script>
 </body>
